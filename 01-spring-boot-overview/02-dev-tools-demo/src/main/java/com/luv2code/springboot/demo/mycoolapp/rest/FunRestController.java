@@ -15,4 +15,15 @@ public class FunRestController {
         return String.format("Hello %s!", girlfriend);
     }
 
+    // expose a new endpoint
+    @GetMapping("/epic")
+    public String epicGirlfriend() {
+        return String.format("%s is epic!", girlfriend);
+    }
+
+    @GetMapping("/fortune")
+    public String girlfriendFortune() {
+        return String.format("It is %s's lucky day!", girlfriend);
+    }
+
 }
