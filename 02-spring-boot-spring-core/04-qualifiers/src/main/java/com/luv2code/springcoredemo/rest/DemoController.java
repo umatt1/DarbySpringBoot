@@ -27,7 +27,7 @@ public class DemoController {
         reasonable default logic
      */
     @Autowired
-    public void setGirlfriend(@Qualifier("emoGirlfriend") Girlfriend newGirl) {
+    public void setGirlfriend(@Qualifier("violentGirlfriend") Girlfriend newGirl) {
         epicGirlfriend = newGirl;
     }
 
