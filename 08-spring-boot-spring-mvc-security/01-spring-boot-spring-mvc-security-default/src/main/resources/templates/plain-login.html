@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Custom Login Page</title>
+    <style>
+        .fail {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
@@ -10,7 +15,7 @@
 
 <form action="#" th:action="@{/authenticateTheUser}" method="post">
 
-    <div th:if="${param.error}}">
+    <div class="fail" th:if="${param.error}">
         <i>Sorry! You entered invalid username/password.</i>
     </div>
 
